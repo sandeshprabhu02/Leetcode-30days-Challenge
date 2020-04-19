@@ -28,7 +28,6 @@ class Solution:
         right = len(nums) -1
         while left <= right:
             mid = (left+right)//2
-            print(mid)
             if nums[mid] == target:
                 return mid
             elif nums[left] <= nums[mid]:
@@ -37,16 +36,13 @@ class Solution:
                 else:
                     left = mid+1
             else:
-                if target >= nums[mid] and target < nums[right]:
+                if target > nums[mid] and target <= nums[right]:
                     left = mid+1
                 else:
                     right = mid-1
-            print('-----')
         return -1
 
 
 
-print(Solution().search([4,5,6,7,0,1,2], 0))
-#4
-print(Solution().search([4,5,6,7,0,1,2], 3))
-#-1
+print(Solution().search([5,1,3], 3))
+#2
