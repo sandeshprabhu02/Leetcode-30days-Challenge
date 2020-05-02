@@ -40,4 +40,4 @@ if __name__ == "__main__":
     #     temp.append(inTime)
     #     temp.append(outTime)
     #     empIntervals.append(temp)
-        print(Solution().minSeatsAtInstabaseParty([[9,10], [4,9], [4,17]]))
+    print(Solution().minSeatsAtInstabaseParty([[90,10], [4,9], [4,17]]))
