@@ -47,11 +47,11 @@ class LinkedList:
             print(temp.val)
             temp = temp.next
     
-    def deleteNthFromEnd(self, n):
+    def deleteNthFromEnd(self, k):
         first = self.head
         second = self.head
         count = 1
-        while count <= n:
+        while count <= k:
             second =  second.next
             count += 1
         if second is None:

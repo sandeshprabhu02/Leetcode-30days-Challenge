@@ -84,8 +84,9 @@ def decodeString(s):
             curNum = curNum*10 + int(c)
         else:
             curString += c
+        print(stack)
     return curString
 
 
 
-print(decodeString("300[a2[cbb]]"))
+print(decodeString("3[a2[cbb]]"))

@@ -53,6 +53,7 @@ class Solution(object):
         graph = [[] for _ in range(numCourses)]
         for post, pre in prerequisites:
             graph[post].append(pre)
+        print(graph)
         visit = [0]*numCourses
         def dfs(node):
             if visit[node]==1:

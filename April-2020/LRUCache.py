@@ -26,7 +26,7 @@ cache.get(3);       // returns 3
 cache.get(4);       // returns 4
 
 """
-
+import collections
 class LRUCache:
 
     def __init__(self, capacity: int):
@@ -55,7 +55,7 @@ class LRUCache:
 # Your LRUCache object will be instantiated and called as such:
 # ["LRUCache","put","put","get","put","get","put","get","get","get"]
 # [[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]
-# obj = LRUCache(capacity)
+# obj = LRUCache(10)
 # param_1 = obj.get(key)
 # obj.put(key,value)
-#expencted ans: [null,null,null,1,null,-1,null,-1,3,4]
+# expencted ans: [null,null,null,1,null,-1,null,-1,3,4]

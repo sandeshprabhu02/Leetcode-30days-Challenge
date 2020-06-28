@@ -48,8 +48,7 @@ class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         print(prerequisites)
         graph = [[] for _ in range(numCourses)]
-        print('graph', graph)
-        
+        print('graph', graph)        
         for course, prereq in prerequisites:
             graph[course].append(prereq)
         

@@ -56,8 +56,8 @@ class MinStack:
     def pop(self):
         if self.stack:
             top  = self.top()
-            if top 
-            return self.stack.pop()
+            if top:
+	            return self.stack.pop()
 
     def top(self):
         if self.stack:
